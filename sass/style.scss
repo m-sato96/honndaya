@@ -103,7 +103,7 @@ header .logo {
   height: 712px;
   position: fixed;
   top:100px;
-  background: url(./images/kv.png) no-repeat center top / cover;
+  background: url(../images/kv.png) no-repeat center top / cover;
 }
 
 footer {
@@ -187,17 +187,17 @@ footer .logo {
 
 #about .contents-blk#sai h2::before {
   display: block;
-  content: url(./images/ico01.png);
+  content: url(../images/ico01.png);
 }
 
 #about .contents-blk#kisetu h2::before {
   display: block;
-  content: url(./images/ico02.png);
+  content: url(../images/ico02.png);
 }
 
 #about .contents-blk#ohashi h2::before {
   display: block;
-  content: url(./images/ico03.png);
+  content: url(../images/ico03.png);
 }
 
 #about .btn a {
@@ -223,7 +223,7 @@ footer .logo {
 
 #feature .feature-image {
   width: 50%;
-  background: url(./images/photo_sec02.png) no-repeat center bottom / cover;
+  background: url(../images/photo_sec02.png) no-repeat center bottom / cover;
 }
 
 #feature .feature-text {
@@ -353,7 +353,7 @@ footer .logo {
   color: #fff !important;
   padding: 100px 0;
   position: relative;
-  background: url(./images/photo_sec04.png) no-repeat center center / cover;
+  background: url(../images/photo_sec04.png) no-repeat center center / cover;
 }
 
 #reservation::after {
@@ -374,7 +374,7 @@ footer .logo {
 
 #reservation h1::before {
   display: block;
-  content: url(./images/ico04.png);
+  content: url(../images/ico04.png);
 }
 
 #reservation p {
@@ -409,7 +409,7 @@ header .logo a {
   top: 100px;
   width: 100%;
   padding: 100px 0;
-  background: url(about/images/bg_about.jpg) no-repeat center center/cover;
+  background: url(../images/bg_about.jpg) no-repeat center center/cover;
 }
 
 #about #page-title:after {
@@ -490,19 +490,19 @@ header .logo a {
 
 #about #sai h1:before {
   display: block;
-  content: url(./images/ico01.png);
+  content: url(../images/ico01.png);
   margin-top:50px;
 }
 
 #about #kisetsu h1:before {
   display: block;
-  content: url(./images/ico02.png);
+  content: url(../images/ico02.png);
   margin-top:50px;
 }
 
 #about #ohashi h1:before {
   display: block;
-  content: url(./images/ico03.png);
+  content: url(../images/ico03.png);
   margin-top:50px;
 }
 
@@ -515,75 +515,75 @@ footer .icon-logo {
 }
 
 #sai .contents-blk:first-child {
-  background: url(./about/images/sai01.jpg) no-repeat center center / cover;
+  background: url(../images/sai01.jpg) no-repeat center center / cover;
 }
 
 #sai .contents-blk:nth-child(2) {
-  background: url(./about/images/sai02.jpg) no-repeat center center / cover;
+  background: url(../images/sai02.jpg) no-repeat center center / cover;
 }
 
 #sai .contents-blk:nth-child(3) {
-  background: url(./about/images/sai03.jpg) no-repeat center center / cover;
+  background: url(../images/sai03.jpg) no-repeat center center / cover;
 }
 
 #sai .contents-blk:nth-child(4) {
-  background: url(./about/images/sai04.jpg) no-repeat center center / cover;
+  background: url(../images/sai04.jpg) no-repeat center center / cover;
 }
 
 #sai .contents-blk:nth-child(5) {
-  background: url(./about/images/sai05.jpg) no-repeat center center / cover;
+  background: url(../images/sai05.jpg) no-repeat center center / cover;
 }
 
 #sai .contents-blk:last-child {
-  background: url(./about/images/sai06.jpg) no-repeat center center / cover;
+  background: url(../images/sai06.jpg) no-repeat center center / cover;
 }
 
 #kisetsu .contents-blk:first-child {
-  background: url(./about/images/kisetsu01.jpg) no-repeat center center / cover;
+  background: url(../images/kisetsu01.jpg) no-repeat center center / cover;
 }
 
 #kisetsu .contents-blk:nth-child(2) {
-  background: url(./about/images/kisetsu02.jpg) no-repeat center center / cover;
+  background: url(../images/kisetsu02.jpg) no-repeat center center / cover;
 }
 
 #kisetsu .contents-blk:nth-child(3) {
-  background: url(./about/images/kisetsu03.jpg) no-repeat center center / cover;
+  background: url(../images/kisetsu03.jpg) no-repeat center center / cover;
 }
 
 #kisetsu .contents-blk:nth-child(4) {
-  background: url(./about/images/kisetsu04.jpg) no-repeat center center / cover;
+  background: url(../images/kisetsu04.jpg) no-repeat center center / cover;
 }
 
 #kisetsu .contents-blk:nth-child(5) {
-  background: url(./about/images/kisetsu05.jpg) no-repeat center center / cover;
+  background: url(../images/kisetsu05.jpg) no-repeat center center / cover;
 }
 
 #kisetsu .contents-blk:last-child {
-  background: url(./about/images/kisetsu06.jpg) no-repeat center center / cover;
+  background: url(../images/kisetsu06.jpg) no-repeat center center / cover;
 }
 
 #ohashi .contents-blk:first-child {
-  background: url(./about/images/ohashi01.jpg) no-repeat center center / cover;
+  background: url(../images/ohashi01.jpg) no-repeat center center / cover;
 }
 
 #ohashi .contents-blk:nth-child(2) {
-  background: url(./about/images/ohashi02.jpg) no-repeat center center / cover;
+  background: url(../images/ohashi02.jpg) no-repeat center center / cover;
 }
 
 #ohashi .contents-blk:nth-child(3) {
-  background: url(./about/images/ohashi03.jpg) no-repeat center center / cover;
+  background: url(../images/ohashi03.jpg) no-repeat center center / cover;
 }
 
 #ohashi .contents-blk:nth-child(4) {
-  background: url(./about/images/ohashi04.jpg) no-repeat center center / cover;
+  background: url(../images/ohashi04.jpg) no-repeat center center / cover;
 }
 
 #ohashi .contents-blk:nth-child(5) {
-  background: url(./about/images/ohashi05.jpg) no-repeat center center / cover;
+  background: url(../images/ohashi05.jpg) no-repeat center center / cover;
 }
 
 #ohashi .contents-blk:last-child {
-  background: url(./about/images/ohashi06.jpg) no-repeat center center / cover;
+  background: url(../images/ohashi06.jpg) no-repeat center center / cover;
 }
 
 header .menu-btn {
@@ -892,5 +892,223 @@ header .menu-btn {
 @media screen and (max-width: 1070px) {
   .item-blk .item {
     width: calc(100% / 2 - 10px);
+  }
+}
+
+// フォーム
+input,
+button,
+textarea,
+select {
+    margin: 0;
+    padding: 0;
+    background: none;
+    border: none;
+    border-radius: 0;
+    outline: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+}
+
+#page-title {
+    position: fixed;
+    top: 100px;
+    width: 100%;
+    padding: 100px 0;
+    background: url(../images/bg_contact.jpg) no-repeat center center;
+    background-size: cover;
+}
+
+#page-title:after {
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, .5);
+    content: "";
+}
+
+#page-title h1,
+#page-title .lead {
+    position: relative;
+    z-index: 2;
+    color: #fff;
+}
+
+#page-title h1 {
+    margin: 0 0 65px;
+    font-size: 3.8rem;
+    font-weight: 600;
+}
+
+.form-blk {
+    margin: 510px 0 0;
+    padding: 65px 0;
+    text-align: left;
+    background: #fff;
+    position: relative;
+}
+
+.form-blk .inner {
+    width: 900px;
+}
+
+label.your-name-c:after,
+label.phone-num-c:after,
+label.reservation-c:after {
+    content: "※";
+    color: #f00;
+    font-size: 1.4rem;
+    margin: 0 0 0 5px;
+}
+
+th {
+    width: 14em;
+    padding: 0 0 50px;
+    font-weight: normal;
+    vertical-align: top;
+}
+
+td {
+    padding: 0 0 50px;
+}
+
+.notes span {
+    color: #f00;
+}
+
+.notes {
+    margin: 0 0 30px;
+}
+
+/*---これ以降に追加--*/
+input#your-name,
+input#phone-num,
+input#e-mail {
+  font-size: 1.8rem;
+  height: 40px;
+  width: 400px;
+  border: 1px solid #c2c2c2;
+  padding: 10px;
+  box-sizing: border-box;
+}
+
+select {
+  font-size: 1.8rem;
+  height: 40px;
+  width: 100px;
+  border: 1px solid #c2c2c2;
+  border-radius: 0;
+  background: #fff;
+  padding: 10px;
+  box-sizing: border-box;
+}
+
+select#day,
+select#time {
+  margin: 0 0 0 2em;
+}
+
+textarea {
+  font-size: 1.8rem;
+  width: 600px;
+  height: 300px;
+  border: 1px solid #c2c2c2;
+  padding: 10px;
+  box-sizing: border-box;
+}
+
+input#btn-submit {
+  font-size: 1.6rem;
+  width: 200px;
+  height: 40px;
+  text-align: center;
+  line-height: 30px;
+  color: #fff;
+  background: #ea7558;
+  border-radius: 5px;
+}
+
+/*-------------------------------
+スマホ
+-------------------------------*/
+
+@media screen and (max-width: 414px) {
+  #contact #page-title {
+    top: 80px;
+    padding: 30px 0;
+  }
+
+  #contact #page-title h1,
+  #contact #page-title .lead {
+    width: 94%;
+    margin: 0 auto;
+  }
+
+  #contact #page-title h1 {
+    margin: 0 auto 30px;
+    font-size: 2.7rem;
+  }
+
+  #contact .form-blk {
+    margin: 358px 0 0;
+    padding: 30px 0;
+  }
+
+  #contact .form-blk .inner {
+    width: 94%;
+    margin: 0 auto;
+  }
+
+  #contact form table {
+    width: 100%;
+  }
+
+  #contact form th {
+   display: block;
+   width: 100%;
+   padding: 0 0 10px;
+ }
+
+ #contact form td {
+   display: block;
+   width: 100%;
+   padding: 0 0 30px;
+ }
+
+ #contact input#your-name,
+ #contact input#phone-num,
+ #contact input#e-mail {
+   font-size: 1.6rem;
+   width: 100%;
+ }
+
+ #contact select {
+   font-size: 1.6rem;
+   width: 3em;
+ }
+
+ #contact select#day,
+ #contact select#time {
+   margin: 0 0 0 1em;
+ }
+
+ #contact textarea {
+   font-size: 1.6rem;
+   width: 100%;
+ }
+
+ #contact .notes {
+    margin: 0 0 30px;
+    font-size: 1.4rem;
+  }
+
+  #contact input#btn-submit {
+    font-size: 1.6rem;
+    width: 100%;
+    margin: 0;
   }
 }
