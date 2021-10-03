@@ -1,4 +1,7 @@
 @charset "UTF-8";
+@use "form";
+@use "common" as c;
+
 
 html {
   margin: 0;
@@ -78,14 +81,23 @@ header .inner {
 
 header ul {
   display: flex;
-  padding-right: 20px;
 }
 
-header a {
-  font-size: 1.5rem;
+header ul a {
+  font-size: 1.4rem;
   color: #2e4551;
-  margin: 0 0 0 50px;
+  margin: 0 0 0 30px;
   letter-spacing: 0.3em;
+  @include c.m-s-w768 {
+    color: #fff;
+  }
+}
+
+header .header-nav {
+    padding-right: 15px;
+    @include c.m-s-w768 {
+        padding-right: 0;
+    }
 }
 
 header a:hover {
@@ -169,6 +181,13 @@ footer .logo {
 #about .wrap-blk {
   display: flex;
   justify-content: space-between;
+  max-width: 1000px;
+  padding: 0 15px;
+}
+
+#about section .wrap-blk {
+    max-width: initial;
+    padding: 0;
 }
 
 #about .lead {
@@ -176,11 +195,15 @@ footer .logo {
 }
 
 #about .contents-blk {
-  width: 320px;
+  width: calc(100% / 3 - 10px);
+  p {
+      display: block;
+      font-size: 1.4rem;
+  }
 }
 
 #about h2 {
-  font-size: 2.4rem;
+  font-size: 1.9rem;
   color: #2e4551;
   letter-spacing: 0.1em;
 }
@@ -188,33 +211,47 @@ footer .logo {
 #about .contents-blk#sai h2::before {
   display: block;
   content: url(../images/ico01.png);
+  height: 95px;
+  object-fit: cover;
 }
 
 #about .contents-blk#kisetu h2::before {
   display: block;
   content: url(../images/ico02.png);
+  height: 95px;
+  object-fit: cover;
 }
 
 #about .contents-blk#ohashi h2::before {
   display: block;
   content: url(../images/ico03.png);
+  height: 95px;
+  object-fit: cover;
 }
 
 #about .btn a {
   font-size: 1.5rem;
   line-height: 38px;
   color: #ea7558;
-  width: 140px;
+  width: 100%;
   height: 42px;
   border: 2px solid #ea7558;
   box-sizing: border-box;
   display: inline-block;
   border-radius: 21px;
+  position: relative;
+  @include c.m-s-w768 {
+      width: 100%;
+  }
+  i {
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+      right: 15px;
+  }
 }
 
-#about .btn i {
-  margin: 0 0 0 .3em;
-}
+
 
 #feature {
   display: flex;
@@ -222,13 +259,13 @@ footer .logo {
 }
 
 #feature .feature-image {
-  width: 50%;
-  background: url(../images/photo_sec02.png) no-repeat center bottom / cover;
+  width: 40%;
+  background: url(../images/photo_sec02.png) no-repeat center center / cover;
 }
 
 #feature .feature-text {
-  width: 50%;
-  padding: 90px 0 90px 100px;
+  width: 60%;
+  padding: 90px 15px 90px 20px;
   box-sizing: border-box;
   text-align: left;
 }
@@ -250,6 +287,15 @@ footer .logo {
   color: #cfd5d8;
   margin: 80px 0 0;
   display: flex;
+  p {
+      padding-left: 20px;
+  }
+  @include c.m-s-w500 {
+      flex-direction: column;
+      p {
+          padding: 0;
+      }
+  }
 }
 
 #feature h2 {
@@ -257,9 +303,8 @@ footer .logo {
   line-height: 1.3;
   font-weight: normal;
   letter-spacing: 0.05em;
-  width: 90px;
-  height: 90px;
-  margin: 0 20px 0 0;
+  width: 100px;
+  height: 100px;
   border: 1px solid #cfd5d8;
   display: flex;
   flex-direction: column;
@@ -277,7 +322,7 @@ footer .logo {
 }
 
 #menu .inner {
-  width: 1054px;
+  width: 100%;
 }
 
 #menu h1 {
@@ -306,6 +351,11 @@ footer .logo {
   justify-content: space-between;
   flex-wrap: wrap;
   width: 100%;
+  box-sizing: border-box;
+  padding: 0 15px;
+  @include c.m-s-w414 {
+      flex-direction: column;
+  }
 }
 
 #menu .item {
@@ -315,6 +365,16 @@ footer .logo {
   border: 2px solid #f0f0f0;
   box-sizing: border-box;
   position: relative;
+  @include c.m-s-w1000 {
+    width: calc(100% / 2 - 10px);
+}
+@include c.m-s-w768 {
+    width: calc(100% / 2 - 5px);
+}
+@include c.m-s-w414 {
+    width: 100%;
+    
+}
 }
 
 #menu .item .photo {
@@ -486,6 +546,7 @@ header .logo a {
 
 #about section h1 {
   font-size: 2.7rem;
+  padding: 0 15px;
 }
 
 #about #sai h1:before {
@@ -508,6 +569,7 @@ header .logo a {
 
 #about section .lead {
   margin: 0 0 65px;
+  padding: 0 15px;
 }
 
 footer .icon-logo {
@@ -593,7 +655,7 @@ header .menu-btn {
 /*-----------------------------------
 スマホ
 -----------------------------------*/
-@media screen and (max-width: 414px) {
+@include c.m-s-w768 {
 
   .inner {
    width: 94%;
@@ -626,8 +688,8 @@ header .menu-btn {
     right: 3%;
     top: 10px;
     padding: 0;
-    width: 34px;
-    height: 34px;
+    width: 50px;
+    height: 50px;
     line-height: 32px;
     text-align: center;
     border: 1px solid #666;
@@ -640,15 +702,16 @@ header .menu-btn {
   }
 
   header .header-nav {
-    width: 250px;
+    width: 100%;
+    height: auto;
     position: fixed;
     display: block;
     top: 80px;
     right: 0;
     z-index: 1000;
-    background: rgba(255, 255, 255, .8);
-    transition: all 0.2s;
-    transform: translate(250px);
+    background: rgba(#2e4551, .9);
+    transition: all 0.3s;
+    transform: translate(100%);
   }
 
   header .header-nav.open {
@@ -662,9 +725,7 @@ header .menu-btn {
   header .header-nav li a {
     display: block;
     width: 100%;
-    padding: 0 10px;
-    height: 30px;
-    line-height: 30px;
+    padding: 10px;
     box-sizing: border-box;
     margin: 0;
   }
@@ -756,7 +817,7 @@ header .menu-btn {
 
   #feature .feature-text {
     width: 100%;
-    padding: 30px;
+    padding: 30px 15px;
   }
 
   #feature .lead {
@@ -781,6 +842,9 @@ header .menu-btn {
   #feature .contents-blk p {
     width: calc(100% - 100px);
     font-size: 1.4rem;
+    @include c.m-s-w500 {
+        width: 100%;
+    }
   }
 
   #menu {
@@ -808,21 +872,7 @@ header .menu-btn {
     margin: 0 15px;
   }
 
-  #menu .item-blk {
-    flex-wrap: wrap;
-  }
 
-  #menu .item {
-    width: 44%;
-    padding: 80px 0 20px;
-    margin: 0 3% 100px;
-  }
-
-  #menu .item .photo {
-    left: calc(50% - 60px);
-    width: 120px;
-    height: 120px;
-  }
 
   #menu .text {
     font-size: 1.3rem;
@@ -865,7 +915,7 @@ header .menu-btn {
   }
 
   #about section#sai {
-    margin: 358px 0 0;
+    margin: 400px 0 0;
   }
 
   #about section .wrap-blk .contents-blk {
@@ -888,227 +938,4 @@ header .menu-btn {
 
 }
 
-/* タブレット */
-@media screen and (max-width: 1070px) {
-  .item-blk .item {
-    width: calc(100% / 2 - 10px);
-  }
-}
 
-// フォーム
-input,
-button,
-textarea,
-select {
-    margin: 0;
-    padding: 0;
-    background: none;
-    border: none;
-    border-radius: 0;
-    outline: none;
-    -webkit-appearance: none;
-    -moz-appearance: none;
-    appearance: none;
-}
-
-#page-title {
-    position: fixed;
-    top: 100px;
-    width: 100%;
-    padding: 100px 0;
-    background: url(../images/bg_contact.jpg) no-repeat center center;
-    background-size: cover;
-}
-
-#page-title:after {
-    display: block;
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background: rgba(0, 0, 0, .5);
-    content: "";
-}
-
-#page-title h1,
-#page-title .lead {
-    position: relative;
-    z-index: 2;
-    color: #fff;
-}
-
-#page-title h1 {
-    margin: 0 0 65px;
-    font-size: 3.8rem;
-    font-weight: 600;
-}
-
-.form-blk {
-    margin: 510px 0 0;
-    padding: 65px 0;
-    text-align: left;
-    background: #fff;
-    position: relative;
-}
-
-.form-blk .inner {
-    width: 900px;
-}
-
-label.your-name-c:after,
-label.phone-num-c:after,
-label.reservation-c:after {
-    content: "※";
-    color: #f00;
-    font-size: 1.4rem;
-    margin: 0 0 0 5px;
-}
-
-th {
-    width: 14em;
-    padding: 0 0 50px;
-    font-weight: normal;
-    vertical-align: top;
-}
-
-td {
-    padding: 0 0 50px;
-}
-
-.notes span {
-    color: #f00;
-}
-
-.notes {
-    margin: 0 0 30px;
-}
-
-/*---これ以降に追加--*/
-input#your-name,
-input#phone-num,
-input#e-mail {
-  font-size: 1.8rem;
-  height: 40px;
-  width: 400px;
-  border: 1px solid #c2c2c2;
-  padding: 10px;
-  box-sizing: border-box;
-}
-
-select {
-  font-size: 1.8rem;
-  height: 40px;
-  width: 100px;
-  border: 1px solid #c2c2c2;
-  border-radius: 0;
-  background: #fff;
-  padding: 10px;
-  box-sizing: border-box;
-}
-
-select#day,
-select#time {
-  margin: 0 0 0 2em;
-}
-
-textarea {
-  font-size: 1.8rem;
-  width: 600px;
-  height: 300px;
-  border: 1px solid #c2c2c2;
-  padding: 10px;
-  box-sizing: border-box;
-}
-
-input#btn-submit {
-  font-size: 1.6rem;
-  width: 200px;
-  height: 40px;
-  text-align: center;
-  line-height: 30px;
-  color: #fff;
-  background: #ea7558;
-  border-radius: 5px;
-}
-
-/*-------------------------------
-スマホ
--------------------------------*/
-
-@media screen and (max-width: 414px) {
-  #contact #page-title {
-    top: 80px;
-    padding: 30px 0;
-  }
-
-  #contact #page-title h1,
-  #contact #page-title .lead {
-    width: 94%;
-    margin: 0 auto;
-  }
-
-  #contact #page-title h1 {
-    margin: 0 auto 30px;
-    font-size: 2.7rem;
-  }
-
-  #contact .form-blk {
-    margin: 358px 0 0;
-    padding: 30px 0;
-  }
-
-  #contact .form-blk .inner {
-    width: 94%;
-    margin: 0 auto;
-  }
-
-  #contact form table {
-    width: 100%;
-  }
-
-  #contact form th {
-   display: block;
-   width: 100%;
-   padding: 0 0 10px;
- }
-
- #contact form td {
-   display: block;
-   width: 100%;
-   padding: 0 0 30px;
- }
-
- #contact input#your-name,
- #contact input#phone-num,
- #contact input#e-mail {
-   font-size: 1.6rem;
-   width: 100%;
- }
-
- #contact select {
-   font-size: 1.6rem;
-   width: 3em;
- }
-
- #contact select#day,
- #contact select#time {
-   margin: 0 0 0 1em;
- }
-
- #contact textarea {
-   font-size: 1.6rem;
-   width: 100%;
- }
-
- #contact .notes {
-    margin: 0 0 30px;
-    font-size: 1.4rem;
-  }
-
-  #contact input#btn-submit {
-    font-size: 1.6rem;
-    width: 100%;
-    margin: 0;
-  }
-}

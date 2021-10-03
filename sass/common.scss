@@ -1,0 +1,32 @@
+@charset "UTF-8";
+
+@mixin m-s-w414 {
+    @media screen and (max-width: 414px) {
+        @content;
+    }
+}
+
+@mixin m-s-w500 {
+    @media screen and (max-width: 500px) {
+        @content;
+    }
+}
+
+@mixin m-s-w768 {
+    @media screen and (max-width: 768px) {
+        @content;
+    }
+}
+
+@mixin m-s-w1000 {
+    @media screen and (max-width: 1000px) {
+        @content;
+    }
+}
+
+.w768-visible {
+    display: initial;
+    @include m-s-w768 {
+        display: none;
+    }
+}
